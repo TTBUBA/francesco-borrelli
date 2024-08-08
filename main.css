@@ -1,0 +1,155 @@
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+img
+{
+    border-radius: 50%;
+    height: 300px;
+    margin-right: 50px;
+    
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Per allineare il testo a destra dell'immagine */
+    margin-left: 20px; /* Aggiungi uno spazio tra l'immagine e il testo */
+    margin: 0px;
+}
+
+.text-container p {
+    margin: 10px; /* Imposta il margine dei paragrafi a 0 per eliminare lo spazio tra di essi */
+}
+
+
+
+.BUBA
+{
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 90px;
+    left: 50%;
+    transform: translateX(30%); /* Sposta il contenitore a sinistra del 50% della sua larghezza */
+    margin: 0;
+
+}
+
+.social
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Per allineare il testo a destra dell'immagine */
+    margin-left: 20px; /* Aggiungi uno spazio tra l'immagine e il testo */
+    margin: 0px;
+    color: white;
+}
+
+.name
+{
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+    font-size: 50px;
+}
+
+
+
+.professione
+{
+    
+    color: white;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+
+#particles-js {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 0; /* Imposta lo z-index in modo che il div con le particelle sia dietro */
+}
+
+.Container {
+    z-index: 1; /* Imposta lo z-index in modo che il contenitore con l'immagine sia sopra */
+}
+
+
+
+.button
+{
+    font-size: 40px;
+    display: flex;
+    justify-content: center; /* Centra i pulsanti orizzontalmente */
+    
+}
+
+.icon 
+{
+    display: flex;
+    left: 50%;
+    transform: translateX(50%); /* Sposta il contenitore a sinistra del 50% della sua larghezza */
+    
+}
+
+.icon a 
+{
+    margin:  10px; /* Aggiungi spazio tra i pulsanti */
+}
+
+.fa-facebook
+{
+    color: white;
+}
+
+.fa-x-twitter
+{
+    color: white;
+}
+
+.fa-instagram
+{
+    color: white;
+}
+
+.fa-linkedin
+{
+    color: white;
+}
+
+
+
+/* Media query per schermi con larghezza inferiore a 600px */
+@media (max-width: 1000px) {
+    .Center {
+        flex-direction: column; /* Imposta la direzione del flex a colonna */
+    }
+
+    img {
+        margin-right: 0; /* Rimuovi il margine destro dell'immagine */
+        width: 100%; /* Imposta la larghezza dell'immagine al 100% */
+    }
+
+    .text-container {
+        margin-left: 0; /* Rimuovi il margine sinistro del contenitore del testo */
+    }
+
+    .icon {
+        flex-direction: row; /* Imposta la direzione del flex a riga */
+    }
+}
